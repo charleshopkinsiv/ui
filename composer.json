@@ -1,0 +1,23 @@
+{
+    "name": "charleshopkinsiv/ui",
+    "description": "",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/charleshopkinsiv/ui"
+        }
+    ],
+    "authors": [
+        {
+            "name": "Charles Hopkins",
+            "email": "charleshopkinsiv@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ui\\": "src"
+        }
+    }
+}
