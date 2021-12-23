@@ -1,16 +1,32 @@
 <?php
-namespace charleshopkinsiv\Ui;
+namespace Ui;
 
 class Ui
 {
 
     private FilterCollection $FilterCollection;
     private $Colleciton = [];
+    private Catalog $Catalog;
+
+    private int $item_count = 300;
 
     public function __construct()
     {
 
         $this->FilterCollection = new FilterCollection();
+    }
+
+
+    public function setItemCount(int $count)
+    {
+
+        $this->item_count = $count;
+    }
+
+    public function getItemCount()
+    {
+
+        return $this->item_count;
     }
 
     public function addFilter(Filter $Filter)
@@ -42,17 +58,20 @@ class Ui
     }
 
 
-    public function getCatalog() : Catalog
+    public function catalog() : Catalog
     {
 
-        return new Catalog($this->Collection);
+        if(empty($this->Catalog))
+            $this->Catalog = new Catalog($this);
+
+        return $this->Catalog;
     }
 
 
-    public function getTable() : Table
+    public function table() : Table
     {
 
-        return new Table($this->Collection);
+        return new Table();
     }
 
 

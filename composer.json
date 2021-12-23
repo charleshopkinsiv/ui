@@ -1,5 +1,5 @@
 {
-    "name": "charleshopkinsiv/ui",
+    "name": "charleshopkinsiv/Ui",
     "description": "",
     "license": "MIT",
     "repositories": [
@@ -17,7 +17,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "ui\\": "src"
+            "Ui\\": "src"
         }
     }
 }
