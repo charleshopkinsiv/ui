@@ -1,5 +1,5 @@
 <?php
-namespace Ui;
+namespace charleshopkinsiv\Ui;
 
 class Ui
 {

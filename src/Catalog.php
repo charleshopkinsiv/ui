@@ -1,6 +1,6 @@
 <?php
 
-namespace Ui;
+namespace charleshopkinsiv\Ui;
 
 
 class Catalog implements \iterator
