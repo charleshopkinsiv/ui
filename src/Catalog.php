@@ -10,14 +10,16 @@ class Catalog implements \iterator
     private array $ITEMS;
     private int $pointer = 0;
 
-    private static $default_item_count = 8;
+    private static $default_item_limit = 8;
 
     public function __construct(Ui $Ui)
     {
-
+        
         $this->Ui = $Ui;
-        $this->Ui->setItemCount(self::$default_item_count);
     }
+
+
+    public function getUi() : Ui { return $this->Ui; }
 
 
     public function current()
