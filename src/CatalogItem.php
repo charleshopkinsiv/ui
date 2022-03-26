@@ -1,7 +1,7 @@
 <?php
 
 
-namespace charleshopkinsiv\Ui;
+namespace Ui;
 
 
 class CatalogItem

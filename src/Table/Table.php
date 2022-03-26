@@ -1,6 +1,6 @@
 <?php
 
-namespace charleshopkinsiv\Ui;
+namespace Ui\Table;
 
 
 class Table

@@ -1,6 +1,6 @@
 <?php
 
-namespace charleshopkinsiv\Ui\Filter;
+namespace Ui\Filter;
 
 interface Filter
 {
